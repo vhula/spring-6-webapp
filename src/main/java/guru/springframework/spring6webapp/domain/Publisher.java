@@ -17,7 +17,7 @@ public class Publisher {
     private String zip;
 
     @OneToMany(mappedBy = "publisher")
-    private Set<Publisher> publishers;
+    private Set<Book> books;
 
     public void setId(Long id) {
         this.id = id;
@@ -92,11 +92,11 @@ public class Publisher {
                 '}';
     }
 
-    public Set<Publisher> getPublishers() {
-        return publishers;
+    public Set<Book> getBooks() {
+        return books;
     }
 
-    public void setPublishers(Set<Publisher> publishers) {
-        this.publishers = publishers;
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 }
